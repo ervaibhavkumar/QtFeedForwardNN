@@ -12,6 +12,9 @@ const int trainItems = 1000;
 const double trainingSlope = 0.3;
 const double trainingIntercept = 0.4;
 
+const int hiddenUnits = 3;
+const double learningRate = 0.001;
+
 typedef std::vector<double> v_d;
 
 #endif // CONFIG_H

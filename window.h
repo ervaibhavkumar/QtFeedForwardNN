@@ -5,6 +5,8 @@
 #include <QGraphicsScene>
 
 #include "training.h"
+#include "nn.h"
+#include "line.h"
 
 class Window : public QGraphicsView
 {
@@ -15,9 +17,15 @@ public:
 private:
     void prepareTrainingData();
     QColor calculateColor(double input);
+    void plotGuess();
+    void drawGuess(QPoint start, QPoint end);
+    void train();
 
     QSize windowSize;
     QList<Training> *trainingData;
+    NN *nn;
+    Line *guess = nullptr;
+    int trainingItem = 0;
 };
 
 #endif // WINDOW_H

@@ -10,3 +10,5 @@ Training::Training(v_d vd, double answer)
 double Training::getOutput() {
     return output;
 }
+
+v_d Training::getInput() { return input; }

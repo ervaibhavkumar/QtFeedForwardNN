@@ -10,6 +10,7 @@ class Training
 public:
     Training(v_d vd, double answer);
     double getOutput();
+    v_d getInput();
 
 private:
     v_d input;
